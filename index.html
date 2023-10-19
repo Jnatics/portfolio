@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<style>
+    .menu {
+        top: 0;
+        position: sticky;
+    }
+
+    .menu ul {
+        display: flex;
+        width: 100%;
+        height: 40px;
+        margin: auto;
+        max-width: 10000px;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .menu li {
+        padding: 1rem 2rem 1.15rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: #f0eaea;
+        min-width: 80px;
+        margin: auto;
+    }
+
+    .menu li:hover {
+        background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
+        background-size: 100% 100%;
+        color: #27262c;
+        animation: spring 300ms ease-out;
+        text-shadow: 0 -1px 0 #ef816c;
+        font-weight: bold;
+    }
+
+    @keyframes spring {
+        15% {
+            -webkit-transform-origin: center center;
+            -webkit-transform: scale(1.2, 1.1);
+        }
+
+        40% {
+            -webkit-transform-origin: center center;
+            -webkit-transform: scale(0.95, 0.95);
+        }
+
+        75% {
+            -webkit-transform-origin: center center;
+            -webkit-transform: scale(1.05, 1);
+        }
+
+        100% {
+            -webkit-transform-origin: center center;
+            -webkit-transform: scale(1, 1);
+        }
+    }
+
+    body {
+        background-color: antiquewhite;
+    }
+
+    h1 {
+        border-radius: 20px;
+        text-align: center;
+        padding: 40px;
+        width: auto;
+        margin-left: auto;
+        background-color: rgb(58, 55, 250);
+    }
+
+    .content {
+        background-color: rgb(223, 72, 236);
+        border-radius: 10px;
+        border-width: 10px;
+        width: auto;
+        padding: 100px;
+    }
+
+    .content1 {
+        color: rgb(250, 235, 215);
+        -webkit-text-stroke-color: rgb(8, 8, 8);
+        -webkit-text-stroke-width: 2px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 300%;
+        font-family: tahoma;
+    }
+
+    .content1-shadow {
+        margin-top: -137px;
+        margin-left: 275px;
+        font-style: italic;
+        color: rgb(51, 50, 49);
+        text-transform: uppercase;
+        font-size: 300%;
+        
+    }
+
+    .content2 {
+        color: rgb(250, 235, 215);
+        -webkit-text-stroke-color: rgb(8, 8, 8);
+        -webkit-text-stroke-width: 1.5px;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 200%;
+        font-family: chiller;
+    }
+
+
+    .activity {
+        background-color: rgb(228, 218, 84);
+        border-radius: 10px;
+        border-width: 10px;
+        width: auto;
+        padding: 130px;
+    }
+
+    .activity img:hover {
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .aboutme {
+        background-color: rgb(241, 148, 77);
+        border-radius: 10px;
+        font-size: 18px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: auto;
+        text-align: center;
+        width: auto;
+        padding: 120px;
+    }
+
+    .circle {
+        background-color: #27262c;
+        border-radius: 50%;
+        margin-left: -45px;
+        margin-top: -100px;
+        padding: 150px;
+        width: 10px;
+        background-attachment: fixed;
+    }
+
+    .box-top {
+        padding: 5px;
+        background-color: rgb(8, 8, 8);
+    }
+
+    .box-bottom { 
+        padding: 5px;
+        background-color: rgb(12, 12, 12);
+    }
+
+    .footer {
+        background-color: rgb(24, 26, 26);
+        border-radius: 10px;
+        border-width: 1px;
+        width: auto;
+        padding: 40px;
+    }
+
+    .visit>a {
+        display: inline;
+        margin: 11%;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 20px;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .visit>a:hover {
+        padding: 20px;
+    }
+
+    .facebook {
+        background-color: #1877f2;
+        color: #fff;
+    }
+
+    .facebook:hover {
+        color: #010101;
+    }
+
+    .instagram {
+        background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366);
+        background-size: 300% 300%;
+        color: #fff;
+    }
+
+    .instagram:hover {
+        color: #0a0a09;
+    }
+
+    .tiktok {
+        background: #010101;
+        color: #fff;
+    }
+
+    .tiktok:hover {
+        color: #f1ef52;
+    }
+
+    .menu a {
+        color: rgb(37, 38, 39);
+    }
+   
+</style>
+
+<body>
+    <div class="box-top"></div>
+    <h1>
+        <img src="https://images.cooltext.com/5674599.png" width="auto" height="auto"
+            alt="Hello! My Name is Jelmar Tinong" />
+    </h1>
+    <div class="box-bottom"></div>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#act">ACTIVITIES</li></a>
+            <li><a href="#about">ABOUT ME</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="content">
+        <p class="content1"> My First Website Design </p>
+        <p class="content1-shadow"> My First Website Design </p>
+        <p class="content2"> I am a Web Developer and I love creating websites. </p>
+    </div>
+    <br><br><br><br>
+    <section id="act">
+        <div class="box-top"></div>
+        <h1>
+            <img src="https://images.cooltext.com/5674602.png" width="auto" height="auto"
+                alt="Welcome to My Activities!" />
+        </h1>
+        <div class="box-bottom"></div>
+        <br>
+        <div class="activity">
+            <table border="3">
+                <td colspan="4" style="padding: 3px;"></td>
+                <tr>
+                    <td rowspan="3" style="width: 20px; background-color: rgb(24, 26, 26);"></td>
+                    <td colspan="2" style="padding: 3px; background-color: rgb(24, 26, 26);">
+                        </std>
+                    <td rowspan="3" style="width: 20px; background-color: rgb(24, 26, 26);"></td>
+                </tr>
+                <tr>
+                    <th
+                        style="border-radius: 10px; border-width: 1px; background-color: rgb(243, 105, 209); width: 2000px; padding: 30px">
+                        <a href="act1.html"><img src="Screenshot 2023-10-19 091117.jpg" style="width: 450px; height: 300px;
+                        border-radius: 20px;"></img></a>
+                    </th>
+                    <td
+                        style="border-radius: 10px; border-width: 1px; background-color: rgb(245, 244, 242); width: 2000px; padding: 30px">
+                        ACTIVITY 1: CSS/HTML (Class Schedule) without Anchor Tag</td>
+                </tr>
+                <tr>
+                    <th
+                        style="border-radius: 10px; border-width: 1px; background-color: rgb(243, 105, 209); width: 2000px; padding: 30px">
+                        <a href="act2.html"><img src="Screenshot 2023-10-19 091213.jpg" style="width: 450px; height: 100px;
+                            border-radius: 20px;"></a>
+                    </th>
+                    <td
+                        style="border-radius: 10px; border-width: 1px; background-color: rgb(245, 244, 242); width: 2000px; padding: 30px">
+                        ACTIVITY 2: CSS/HTML (Class Schedule) with Anchor Tag</td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="padding: 3px; background-color: rgb(24, 26, 26);">
+                        </std>
+                </tr>
+                <td colspan="4" style="padding: 3px;"></td>
+            </table>
+        </div>
+    </section>
+    <br><br><br><br>
+    <section id="about">
+        <div class="box-top"></div>
+        <h1>
+            <img src="https://images.cooltext.com/5674611.png" width="auto" height="auto"
+                alt="Welcome to my short Biography!" />
+        </h1>
+        <div class="box-bottom"></div>
+        <br>
+        <div class="aboutme">
+            <div class="image" style="float: left; position: relative; top: -80px;"><img
+                    src="_20181205_205845.jpg" width="300px"
+                    height="300px" style="border-radius: 50%;"></div><div class="circle"></div>
+            <p style="margin-top: -200px;">
+                Welcome to my corner of the internet! I'm Jelmar Tinong, and I'm delighted to share a little bit about
+                myself with you. I am a Web Developer known for creating stunning web pages. I was born on the
+                29th of February 2002 at Ampucao Itogon Benguet.
+            </p>
+            <br>
+        </div>
+    </section>
+    <br>
+    <p
+        style="background-color: rgb(24, 26, 26); width: 15%; margin-left: 43%; color: white; text-align: center; font-size: x-large; border-radius: 10px;">
+        You May Also Visit</p>
+    <br>
+    <div class="footer">
+        <div class="visit">
+            <br>
+            <a href="https://www.facebook.com/profile.php?id=100008691990091" class="facebook">Facebook
+            </a>
+            <a href="https://www.instagram.com/jelmartinong/" class="instagram">Instagram</a>
+            <a href="https://www.tiktok.com/@jelmarguimbatinong?is_from_webapp=1&sender_device=pc"
+                class="tiktok">TikTok</a>
+                <br><br><br>
+            <p style="color:#fff; text-align: center;" >&copy; jelmarguimbatinong || All Rights Reserved || 2023</p>
+        </div>
+    </div>
+    
+
+    
+</html>
